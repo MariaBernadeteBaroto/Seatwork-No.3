@@ -52,12 +52,15 @@ while True:
         for key, value in search_dict.items():
             print(key, ":", value)
     
+    # Implement Option 3
     if choice1.casefold() == "3":
         choice=input("Are you sure you want to exit?(y/n)")
         if choice == "y":
-            print("Thank you")
+            print()
+            print("************************")
+            print()
+            print("      Thank you         ")
+            print()
+            print("************************")
             break
         
-
-
-# Implement Option 3
