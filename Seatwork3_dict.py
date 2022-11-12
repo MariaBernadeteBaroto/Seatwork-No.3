@@ -13,10 +13,19 @@ print()
 print()
 print("*******************************")
 
+# Dictionary
+
+Tracing_list = {
+}
+
+
 # Allow user to select item in the menu
 choice1= input("Choose option displayed on menu(1-3): ")
-if choice1.casefold() == "1":
-    name=input("What is your name? ")
+
+
+# Implement Option 1
+if choice1.casefold() == "1" :
+    data1=input("What is your name? ")
     data2=input("What is your age? ")
     data3=input("What is your address? ")
     data4=input("Please type your contact number: ")
@@ -25,8 +34,8 @@ if choice1.casefold() == "1":
     data7=input("What is your relationship to your contact person? ")
     data8=input("Please type the contact number of your contact person: ")
     
-    dict2 = {
-        "Full name" : name,
+    name = {
+        "Full name" : data1,
         "Age"       : data2,
         "Address"   : data3,
         "Contact Number"  : data4,
@@ -35,14 +44,10 @@ if choice1.casefold() == "1":
         "Relationship to Contact Person" : data7,
         "Contact number of Contact Person" :data8
     }
+    Tracing_list.update(name)
+    for key, value in name.items():
+        print(key, ":", value)
 
-    
-dict1 = {
-    name : dict2
-}
-
-print(dict1)
-
-# Implement Option 1
+if choice1.casefold
 # Implement Option 2
 # Implement Option 3
